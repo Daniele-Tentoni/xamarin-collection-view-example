@@ -32,15 +32,19 @@
                     Title="Ordering" />
                 </StackLayout>
             </CollectionView.Header>
-                    <CollectionView.GroupHeaderTemplate>
-                        <DataTemplate x:DataType="model:ItemGroup">
-                            <StackLayout
-                                     >
-                                <Label Text="{Binding Name}" HeightRequest="30"
-                                   HorizontalOptions="Center" />
-                            </StackLayout>
-                        </DataTemplate>
-                    </CollectionView.GroupHeaderTemplate>
+            <CollectionView.Footer>
+                <StackLayout></StackLayout>
+            </CollectionView.Footer>
+            <CollectionView.GroupHeaderTemplate>
+                <DataTemplate x:DataType="model:ItemGroup">
+                    <StackLayout
+                        >
+                        <Label Text="{Binding Name}"
+                               HeightRequest="30"
+                               HorizontalOptions="Center" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.GroupHeaderTemplate>
             <CollectionView.ItemTemplate>
                 <DataTemplate>
                     <StackLayout Padding="10" x:DataType="model:Item">
