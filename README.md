@@ -2,6 +2,10 @@
 
 Created to show un unexpected behaviour using Collection View control from Xamarin Forms library.
 
+## Updates
+
+1. Adding Footer element with empty content when using Header element in a Collection View let the header to be visible when user scroll down the collection view, but it's not enought. The Header element is in the screen by default.
+
 ## How to reproduce
 
 1. Clean the starter Shell template leaving only Collection View page
